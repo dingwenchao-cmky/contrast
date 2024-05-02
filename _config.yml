@@ -18,12 +18,14 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html",title:"Home", icon: home}
   - {file: "README.md", title:"About", icon: address-card}
-  - {file: "PYTHON.html",title:"python", icon: home}
-  - {file: "CPLUSPLUS.md", title:"cplusplus", icon: address-card}
+
   
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "ding18500347267@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/dingwenchao-cmky"}
+
+  - {file: "PYTHON.md",title:"python", icon: home}
+  - {file: "CPLUSPLUS.md", title:"cplusplus", icon: address-card}
 
 
 comments:
