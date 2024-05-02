@@ -23,8 +23,8 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "ding18500347267@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/dingwenchao-cmky"}
 
-  - {file: "python.md", title:"python"}
-  - {file: "cplusplus.md", title:"cplusplus"}
+  - {file: "README.md", title:"python"}
+  - {file: "README.md", title:"cplusplus"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
