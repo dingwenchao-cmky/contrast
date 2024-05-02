@@ -24,10 +24,6 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "ding18500347267@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/dingwenchao-cmky"}
 
-  - {file: "PYTHON.md",title:"python"}
-  - {file: "CPLUSPLUS.md", title:"cplusplus"}
-
-
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
