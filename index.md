@@ -2,23 +2,6 @@
 layout: home
 title: ""
 ---
-
-## Featured Posts
-
-{% for post in site.posts limit:3 %}
-- [{{ post.title }}]({{ post.url | relative_url }}) - {{ post.date | date: "%b %d, %Y" }}
-{% endfor %}
-
-## Explore
-
-- [Python Tutorials](/categories/python-programming)
-- [C++ Tutorials](/categories/c-plus-plus-programming)
-
-## Stay Connected
-
-- [Follow on GitHub](https://github.com/dingwenchao-cmky)
-- [Subscribe to our Newsletter](#subscribe)
-
 <div id="quote-container">
     <p id="quote">加载中...</p>
 </div>
