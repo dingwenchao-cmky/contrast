@@ -23,7 +23,7 @@ title: ""
   <p>Discover the latest in Python, C++, and Web Development.</p>
 </div>
 
-![Feature Image](/path/to/your/image.jpg)
+![Feature Image](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)
 
 ## Featured Posts
 
