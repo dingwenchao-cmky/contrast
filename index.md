@@ -12,9 +12,11 @@ title: ""
     <p id="quote">加载中...</p>
 </div>
 <style>
+    body{
+        font-family: 'Lato', sans-serif;    
+    }
     #quote {
-        font-family: Arial, sans-serif;
-        color: blue;
+        color: black;
     }
 </style>
 <script>
