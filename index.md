@@ -8,7 +8,6 @@ title: ""
 # 欢迎亮亮
 # 欢迎洁达
 
-<!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
