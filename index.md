@@ -1,10 +1,6 @@
 ---
-layout: page
-title: ""
----
----
 layout: home
-title: My Programming Blog
+title: "My Programming Blog"
 ---
 
 # Welcome to My Programming Blog!
