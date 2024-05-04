@@ -2,6 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 <meta charset="{{ site.encoding }}">
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
@@ -30,7 +31,6 @@
 <header>
   <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
   {% include menu.html menu=pages %}
-   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
 </header>
 
 {{ content }}
