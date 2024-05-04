@@ -2,25 +2,6 @@
 layout: home
 title: ""
 ---
-<style>
-  .hero {
-    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  .feature-image {
-    width: 80%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-</style>
-
-<div class="hero">
-  <h1>Welcome to My Programming Blog!</h1>
-  <p>Discover the latest in Python, C++, and Web Development.</p>
-</div>
 
 ## Featured Posts
 
@@ -37,11 +18,6 @@ title: ""
 
 - [Follow on GitHub](https://github.com/dingwenchao-cmky)
 - [Subscribe to our Newsletter](#subscribe)
-
-<div>
-  <h3>Follow Our Social Media</h3>
-  <!-- Social media plugin -->
-</div>
 
 <div id="quote-container">
     <p id="quote">加载中...</p>
