@@ -11,7 +11,12 @@ title: ""
 <div id="quote-container">
     <p id="quote">加载中...</p>
 </div>
-
+<style>
+    #quote {
+        font-family: Arial, sans-serif;
+        color: blue;
+    }
+</style>
 <script>
     // 发起网络请求获取名人名言
     fetch('https://api.xygeng.cn/openapi/one')
