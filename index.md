@@ -10,7 +10,7 @@ title: ""
     border-radius: 8px;
   }
   .feature-image {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -21,8 +21,6 @@ title: ""
   <h1>Welcome to My Programming Blog!</h1>
   <p>Discover the latest in Python, C++, and Web Development.</p>
 </div>
-
-![Feature Image](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg))
 
 ## Featured Posts
 
