@@ -37,18 +37,13 @@ title: ""
 
 ## Stay Connected
 
-- [Follow on GitHub](https://github.com/yourusername)
+- [Follow on GitHub](https://github.com/dingwenchao-cmky)
 - [Subscribe to our Newsletter](#subscribe)
 
 <div>
   <h3>Follow Our Social Media</h3>
   <!-- Social media plugin -->
 </div>
-
-## Contact Us
-
-Feel free to [get in touch](/contact) or drop us an email at info@example.com!
-
 
 <div id="quote-container">
     <p id="quote">加载中...</p>
