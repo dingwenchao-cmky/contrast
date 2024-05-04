@@ -9,8 +9,8 @@ date_format: "%B %d, %Y"
 # Layout
 
 show_excerpts: false       # show article excerpts on the home page 在主页上显示文章摘录
-show_frame: false          # adds a gray frame to the site 为站点添加灰框
-show_sidebar: true         # show a sidebar instead of the usual header 显示侧边栏而不是通常的标题
+show_frame: true          # adds a gray frame to the site 为站点添加灰框
+show_sidebar: false         # show a sidebar instead of the usual header 显示侧边栏而不是通常的标题
 minimal: true             # use a dark header 使用深色标题
 
 # Menu
