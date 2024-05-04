@@ -27,8 +27,8 @@ external:                  # shows a footer with social links - for available ic
   - {title: Github, icon: github, url: "https://github.com/dingwenchao-cmky"}
 
 comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
+disqus_shortname: ""    # see https://disqus.com/
+isso_domain: ""         # see https://posativ.org/isso/
 
 plugins:
  - jekyll-feed
