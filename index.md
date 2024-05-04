@@ -1,7 +1,8 @@
 ---
-layout: home
+layout: page
 title: ""
 ---
+
 <div id="quote-container">
     <p id="quote">加载中...</p>
 </div>
