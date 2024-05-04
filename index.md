@@ -38,7 +38,7 @@ title: ""
 
 ## Stay Connected
 
-- [Follow on GitHub](https://github.com/yourusername)
+- [Follow on GitHub](https://github.com/dingwenchao-cmky)
 - [Subscribe to our Newsletter](#subscribe)
 
 <div>
