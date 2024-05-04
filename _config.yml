@@ -16,8 +16,8 @@ minimal: true             # use a dark header 使用深色标题
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.md",title:"Home", icon: home}
-  - {file: "README.md", title:"About", icon: address-card}
+  - {file: "index.md",title: "Home"}
+  - {file: "README.md", title: "About"}
   - {file: "EnglishLearn.pdf", title: "English"}
   - {file: "blog.md", title: "Blog"}
 
