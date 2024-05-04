@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "My Programming Blog"
+title: ""
 ---
 
 # Welcome to My Programming Blog!
