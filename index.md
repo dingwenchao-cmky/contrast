@@ -8,7 +8,6 @@ title: ""
 # 欢迎亮亮
 # 欢迎洁达
 
-# 名人名言
 <div id="quote-container">
     <h2>名人名言</h2>
     <p id="quote">正在加载名言...</p>
