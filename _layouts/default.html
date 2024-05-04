@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
 <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 <meta charset="{{ site.encoding }}">
 <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
@@ -27,6 +28,7 @@
 {% else %}
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
+  </head>
 
 <header>
   <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
