@@ -1,0 +1,31 @@
+<div class="video-grid">
+    {% for video_url in include.urls %}
+    <div class="video">
+        <iframe src="{{ video_url }}" frameborder="0" allowfullscreen style="width: 100%; height: 100%;"></iframe>
+    </div>
+    {% endfor %}
+</div>
+
+<style>
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
