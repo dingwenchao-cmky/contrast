@@ -1,6 +1,6 @@
 ---
-layout:page
-title:
+layout: page
+title: ""
 ---
 
 # 1.两数之和
