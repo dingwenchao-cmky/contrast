@@ -1,1 +1,112 @@
+---
+layout:page
+title:
+---
+
+# 1.两数之和
+给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。
+你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。
+你可以按任意顺序返回答案。
+
+示例 1：
+输入：nums = [2,7,11,15], target = 9
+输出：[0,1]
+解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。
+
+示例 2：
+输入：nums = [3,2,4], target = 6
+输出：[1,2]
+
+示例 3：
+输入：nums = [3,3], target = 6
+输出：[0,1]
+
+# 2.解题方法
+方法一：暴力法
+- 描述：使用两层循环遍历所有元素对，检查它们的和是否等于 target。
+- 时间复杂度：O(n^2)，其中 n 是数组的长度。
+- 空间复杂度：O(1)。
+方法二：哈希表法（推荐方法）
+- 描述：
+ - 使用单个循环遍历数组。
+ - 对于每个元素，计算其补数（target - nums[i]），并检查该补数是否已存在于哈希表中。
+ - 如果存在，立即返回两个数的索引。
+ - 如果不存在，将当前元素及其索引添加到哈希表中。
+时间复杂度：O(n)，因为哈希表的平均查找和插入时间都是 O(1)。
+空间复杂度：O(n)，因为最坏情况下需要存储所有元素及其索引。
+
+# c++代码实现
+头文件
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
+# 暴力法
+vector<int> two_sum(vector<int>& nums, int target) {
+    for (int i = 0; i < nums.size(); ++i) {
+        for (int j = i + 1; j < nums.size(); ++j) {  // 从i+1开始，避免与自身比较
+            if (nums[i] + nums[j] == target) {
+                return {i, j};  // 返回索引
+            }
+        }
+    }
+    return {};  // 如果没有找到解，返回空数组
+}
+
+# 哈希表法
+vector<int> twoSum(vector<int>& nums, int target) {
+    unordered_map<int, int> index_map; //创建哈希表
+    for (int i = 0; i < nums.size(); ++i) {
+        int complement = target - nums[i]; //计算补数
+        if (index_map.find(complement) != index_map.end()) {
+            return {index_map[complement], i}; //如果补数存在，返回结果
+        }
+        index_map[nums[i]] = i; //如果不存在，就将当前的索引和值存在哈希表中
+    }
+    return {};
+}
+哈希表法详细说明：
+  - 哈希表初始化：std::unordered_map<int, int> index_map; 初始化一个空的哈希表，键是数组元素的值，值是对应的索引。
+  - 循环遍历数组：使用一个循环遍历数组中的每一个元素。
+  - 计算补数：对于每个元素，计算它需要的补数，以使得它和另一个元素的和等于 target。
+  - 检查补数：使用 index_map.find(complement) 检查这个补数是否已经存在于哈希表中。
+  - find() 方法会查找给定键（这里是 complement）是否存在于哈希表中。如果存在，返回一个指向相应元素的迭代器；如果不存在，返回一个指向 unordered_map::end 的迭代器。
+  - 返回结果：如果找到了补数，即 find() 方法的结果不是 end()，则返回两个元素的索引。这两个索引分别对应于之前存入哈希表的元素和当前元素。
+
+# main函数调用
+int main() {
+    vector<int> nums = {2, 7, 11, 15};
+    int target = 9;
+    vector<int> result = twoSum(nums, target);
+    if (!result.empty()) {
+        cout << "Index1: " << result[0] << ", Index2: " << result[1] << endl;
+    } else {
+        cout << "No two sum solution found." << endl;
+    }
+    return 0;
+}
+
+补数的定义
+补数是指，在给定一个目标值 target 和当前数 nums[i] 的情况下，另一个需要找到的数，使得这两个数的和等于 target。数学上可以表示为：
+complement = target − nums[i]
+
+为什么需要补数
+在“两数之和”的问题中，我们的目标是找到两个数，它们相加的结果等于一个指定的 target 值。对于数组中的每一个元素 nums[i]，我们都需要检查是否存在另一个元素 nums[j]，使得：
+nums[i] + nums[j] = target
+
+将上面的等式重新组织，我们可以得到：
+nums[j] = target − nums[i]
+
+这里的 nums[j] 就是我们所说的补数。
+
+计算补数的过程
+假设我们有数组 nums = [2, 7, 11, 15] 和 target = 9。现在我们需要找出哪两个数字的和为 9。我们来逐个检查：
+当 i = 0，nums[i] = 2：
+计算补数：complement = 9 - 2 = 7
+检查数组中是否存在数字7。
+如果存在数字7，它的索引 j（假设 j != i）与 i 就是我们要找的答案。
+
+
+
 
